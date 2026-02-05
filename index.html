@@ -243,29 +243,33 @@
                 <p class="text-slate-500 dark:text-slate-400 mb-12">
                     Tienes un proyecto en mente? Hablemos sobre cómo podemos construir algo increíble juntos.
                 </p>
-                <form class="space-y-4 text-left">
+                <form action="https://formsubmit.co/rodrigoarevaloabarca@gmail.com" method="POST" class="space-y-4 text-left">
+                    <input type="hidden" name="_subject" value="Contacto desde Portfolio: Rodrigo Arévalo">
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div class="space-y-1.5">
                             <label class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider ml-1">Nombre</label>
-                            <input class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Rodrigo Arevalo" type="text"/>
+                            <input name="name" required class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Rodrigo Arevalo" type="text"/>
                         </div>
                         <div class="space-y-1.5">
                             <label class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider ml-1">Email</label>
-                            <input class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Rodrigoarevalo@email.cl" type="email"/>
+                            <input name="email" required class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Rodrigoarevalo@email.cl" type="email"/>
                         </div>
                     </div>
 
                     <div class="space-y-1.5">
                         <label class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider ml-1">Asunto</label>
-                        <input class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="¿En qué podemos ayudarte?" type="text"/>
+                        <input name="subject" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="¿En qué podemos ayudarte?" type="text"/>
                     </div>
 
                     <div class="space-y-1.5">
                         <label class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider ml-1">Mensaje</label>
-                        <textarea class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Detalla tu consulta o Propuesta" rows="4"> </textarea>
+                        <textarea name="message" required class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Detalla tu consulta o Propuesta" rows="4"></textarea>
                     </div>
 
-                    <button class="w-full py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/20 hover:scale-[1.01] active:scale-95 transition-all">
+                    <input type="hidden" name="_next" value="https://rodrigoarevaloabarca-svg.github.io/Rodrigo-Arevalo-Cv/agradecimientos.html">
+                    <input type="hidden" name="_captcha" value="true">
+
+                    <button type="submit" class="w-full py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/20 hover:scale-[1.01] active:scale-95 transition-all">
                         Enviar Mensaje
                     </button>
                 </form>
